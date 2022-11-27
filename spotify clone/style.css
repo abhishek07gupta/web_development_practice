@@ -31,7 +31,17 @@ nav ul li{
     padding: 0 5px;
 }
 .container{
-    height:80vh;
+    height:75vh;
+    background-color: black;
+    color: white;
+    width: 80%;
+    display: flex;
+    margin: 20px auto;
+    border-radius: 15px;
+    padding: 10px;
+    background-image: url(bg.jpg);
+    background-size: cover;
+    font-family: 'Varela Round', sans-serif;
 }
 .bottom{
     position: sticky;
