@@ -30,3 +30,27 @@ nav ul li{
     height: 35px;
     padding: 0 5px;
 }
+.container{
+    height:80vh;
+}
+.bottom{
+    position: sticky;
+    background-color: black;
+    color: white;
+    height: 80px;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#myProgressBar{
+    width:80vw;
+}
+.icons{
+    margin:12px;
+}
+.icons i{
+    cursor: pointer;
+    margin: 3px;
+}
