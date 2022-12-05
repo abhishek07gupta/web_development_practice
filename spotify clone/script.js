@@ -3,17 +3,18 @@ let audioElement = new Audio('songs/1.mp3');
 let masterPlay = document.getElementById("masterPlay");
 let myProgressBar = document.getElementById("myProgressBar");
 let gif=document.getElementById("playGif");
+masterSongName=document.getElementById("masterSongName");
 let songs=[
-    {songName: "Warriyo - Mortals" , filePath:"songs/1.mp3" , coverPath: "covers/1.jpg"},
-    {songName: "Cielo - Huma-Huma" , filePath:"songs/2.mp3" , coverPath: "covers/2.jpg"},
-    {songName: "Deaf Kev - Invincibles" , filePath:"songs/3.mp3" , coverPath: "covers/3.jpg"},
-    {songName: "Different Heaven & Ehide" , filePath:"songs/4.mp3" , coverPath: "covers/4.jpg"},
-    {songName: "Janji - Heroes - Tonight" , filePath:"songs/5.mp3" , coverPath: "covers/5.jpg"},
-    {songName: "Rabba - Salame-ishq" , filePath:"songs/6.mp3" , coverPath: "covers/6.jpg"},
-    {songName: "Wakanda - Marvels" , filePath:"songs/7.mp3" , coverPath: "covers/7.jpg"},
-    {songName: "Undefeatable - Sion" , filePath:"songs/8.mp3" , coverPath: "covers/8.jpg"},
-    {songName: "Love and Thunder - Thor" , filePath:"songs/9.mp3" , coverPath: "covers/9.jpg"},
-    {songName: "Courtesy call - Thousand" , filePath:"songs/10.mp3" , coverPath: "covers/10.jpg"}
+    {songName: "0 to 100 - Sidhu Moose" , filePath:"songs/1.mp3" , coverPath: "covers/1.jpg"},
+    {songName: "Her - Shubh" , filePath:"songs/2.mp3" , coverPath: "covers/2.jpg"},
+    {songName: "Never fold - Sidhu Moose" , filePath:"songs/3.mp3" , coverPath: "covers/3.jpg"},
+    {songName: "On top - Karan Aujla" , filePath:"songs/4.mp3" , coverPath: "covers/4.jpg"},
+    {songName: "Bloodlust - Sidhu Moose" , filePath:"songs/5.mp3" , coverPath: "covers/5.jpg"},
+    {songName: "Qismat - Ammy virk" , filePath:"songs/6.mp3" , coverPath: "covers/6.jpg"},
+    {songName: "Love Sick - Sidhu Moose" , filePath:"songs/7.mp3" , coverPath: "covers/7.jpg"},
+    {songName: "WYTB - Karan Aujla" , filePath:"songs/8.mp3" , coverPath: "covers/8.jpg"},
+    {songName: "Its Ok God - Karan Aujla" , filePath:"songs/9.mp3" , coverPath: "covers/9.jpg"},
+    {songName: "Let em Play - Karan Aujla" , filePath:"songs/10.mp3" , coverPath: "covers/10.jpg"}
 ]
 let songItems=Array.from(document.getElementsByClassName('songItem'));
 songItems.forEach((element,i)=>{
@@ -62,6 +63,7 @@ Array.from(document.getElementsByClassName('songItemPlay')).forEach(element =>{
         masterPlay.classList.remove('fa-circle-play');
         masterPlay.classList.add('fa-circle-pause');
         gif.style.opacity=1;
+        masterSongName.innerText=songs[songIndex-1].songName;
         audioElement.currentTime=0;
         audioElement.play();
     })
@@ -78,6 +80,7 @@ document.getElementById('next').addEventListener('click',()=>{
     masterPlay.classList.remove('fa-circle-play');
     masterPlay.classList.add('fa-circle-pause');
     gif.style.opacity=1;
+    masterSongName.innerText=songs[songIndex-1].songName;
     audioElement.currentTime=0;
     audioElement.play();
 })
@@ -93,6 +96,7 @@ document.getElementById('previous').addEventListener('click',()=>{
     masterPlay.classList.remove('fa-circle-play');
     masterPlay.classList.add('fa-circle-pause');
     gif.style.opacity=1;
+    masterSongName.innerText=songs[songIndex-1].songName;
     audioElement.currentTime=0;
     audioElement.play();
 })
