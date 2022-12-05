@@ -1,3 +1,8 @@
+//next and previous buttons does not work if song is first played using masterPlay button
+//cant pause from the menu
+
+
+
 console.log("welcome to spotify");
 let audioElement = new Audio('songs/1.mp3');
 let masterPlay = document.getElementById("masterPlay");
@@ -20,6 +25,10 @@ let songItems=Array.from(document.getElementsByClassName('songItem'));
 songItems.forEach((element,i)=>{
     element.getElementsByTagName("img")[0].src = songs[i].coverPath;
     element.getElementsByClassName('songName')[0].innerText = songs[i].songName;
+    var songTimeName = new Audio(`songs/${i}.mp3`);
+    //songTimeName.src=`songs[i]${i}.mp3`;
+    //songTimeName.src=`songs/${i}.mp3`;
+    //element.getElementsByClassName('timeStamp')[i].innerText = songTimeName.duration; //trying to set the song timing in menu.
 })
 
 masterPlay.addEventListener('click' , ()=>{
