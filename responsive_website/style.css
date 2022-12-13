@@ -54,8 +54,8 @@
 }
 
 .navbg{
-    background: rgba(0, 0, 0, 0.7)  url(images/navbg.jfif);
-    background-size: auto;
+    background: rgba(0, 0, 0, 0.7)  url(images/navbg.jpg);
+    background-size: cover;
     background-blend-mode: darken;
 }
 
@@ -64,4 +64,34 @@
     border: 3px solid grey;
     border-radius: 8px;   
     margin: 5px;
+}
+
+.firstSection{
+    height: 100vh;
+}
+.boxMain{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin: auto;
+    max-width: 50%;
+}
+.firstHalf{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+}
+
+.secondHalf{
+    width: 30%;
+}
+
+.secondHalf img{
+    width: 60%;
+    border: 2px solid white;
+    border-radius: 100%;
+    display: block;
+    margin: auto;
 }
