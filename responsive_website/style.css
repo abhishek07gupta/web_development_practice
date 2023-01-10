@@ -27,9 +27,10 @@
     cursor: pointer;
 }
 .navList{
-    width: 50%;
+    width: 70%;
     display: flex;
     align-items: center;
+    font-size: large;
 }
 
 .navList li{
@@ -52,7 +53,7 @@
     justify-content: flex-end;
     align-items: center;
     right: 0px;
-    width: 50%;
+    width: 30%;
 }
 
 .rightNav button{
@@ -60,7 +61,7 @@
 }
 
 .navbg{
-    background: rgba(0, 0, 0, 1) ;
+    background: rgb(43, 40, 40) ;
     /* background-size: cover;
     background-blend-mode: darken; */
 }
@@ -70,7 +71,7 @@
     border: 3px solid grey;
     border-radius: 8px;   
     margin: 5px;
-    width: 25%;
+    width: 50%;
 }
 
 .firstSection{
@@ -119,13 +120,18 @@ font-size: 20px;
 
 .btn{
     padding:4px 10px;
-    margin:10px 5px;
+    margin:20px 5px;
+    background: none;
+    color: white;
     border: 2px solid white;
-    border-radius: 8px;
+    border-radius: 6px;
     cursor: pointer;
+    font-size: large;
 }
 .btn-sm{
-    padding: 1px 8px;
+    padding: 3px 8px;
+    background-color: #f1e9e9;
+    border: 2px solid grey;
     border-radius: 6px;
 }
 
@@ -135,7 +141,7 @@ font-size: 20px;
     margin: auto;
     justify-content: space-evenly;
     align-items: center;
-    padding:3% 0 0 0;
+    padding:3% 0;
 }
 .left{
     flex-direction: row-reverse;
@@ -144,13 +150,92 @@ font-size: 20px;
     padding:0 50px;
 }
 
+.sectiontag{
+    padding: 7px 0;
+}
+
+hr{
+    border: 1px dashed grey;
+    max-width: 25%;
+    margin: auto;
+}
+
 .thumbnail img{
     width:200px;
-    border-radius: 70%;
+    border-radius: 15%;
     border: 2px solid grey;
     display: flex;
     margin: auto;
     justify-content: center;
     align-items: center;
-
 }
+
+.contactUs{
+    background-color: #f0f0f0;
+}
+
+.textContact{
+    text-align: center;
+    font-size: 25px;
+    /* font-weight: bolder; */
+    padding: 5px;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.namebox{
+    width: 300px;
+    max-width: 300px;
+    margin: 0 0 10px;
+    padding: 5px;
+    border: 2px solid grey;
+    border-radius: 5px;
+}
+.numberbox{
+    width: 300px;
+    max-width: 300px;
+    margin: 0 0 10px;
+    padding: 5px;
+    border: 2px solid grey;
+    border-radius: 5px;
+}
+.emailbox{
+    width: 300px;
+    max-width: 300px;
+    margin: 0 0 10px;
+    padding: 5px;
+    border: 2px solid grey;
+    border-radius: 5px;
+}
+
+.submitForm{
+    border: 2px solid grey;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 7px 12px;
+    background-color: #f1e9e9;
+    cursor: pointer;
+}
+
+.problembox{
+    margin: 0 0 10px;
+    padding: 8px;
+    border: 2px solid grey;
+    border-radius: 5px;
+    /* text-align: center; */
+}
+::-webkit-input-placeholder {
+    text-align: center;
+  }
+
+  footer{
+    background-color: rgb(43, 40, 40) ;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
