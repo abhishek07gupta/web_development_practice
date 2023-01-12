@@ -8,27 +8,33 @@
     <title>Utute - The Ultimate Teaching Platform</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="" type="image/x-icon">
+    <link rel="stylesheet" href="responsive.css">
 </head>
 
 <body>
-    <nav class="navbar navbg">
-        <ul class="navList">
+    <nav class="navbar navbg h-nav-resp">
+        <ul class="navList v-nav-resp">
             <div class="logo"><img src="images/logo.png" alt="logo"></div>
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#services">Services</a></li>
             <li><a href="#contact">Contact us</a></li>
         </ul>
-        <div class="rightNav">
+        <div class="rightNav v-nav-resp">
             <input type="text" name="search" id="search">
             <button class="btn-sm">Search</button>
         </div>
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
     </nav>
-    <section class="firstSection mainbg">
+    <section class="firstSection mainbg" id="home">
         <div class="boxMain">
             <div class="firstHalf">
                 <p class="bigtext">Hello Ututer!</p>
-                <p class="smallText">The power of education needs to be accesible to all the 7 billion population of our 
+                <p class="smalltext">The power of education needs to be accesible to all the 7 billion population of our
                     world.Here is your chance to contribute for this great cause.
                 </p>
                 <div class="btns">
@@ -42,26 +48,49 @@
         </div>
     </section>
 
-    <section class="section">
+    <section class="section" id="about">
         <div class="paras">
-        <p class="sectiontag bigtext">Your search ends here</p>
-        <p class="sectionsubtag smallText">Tutoring began as an informal and unstructured method of educational assistance, dating back to periods in Ancient Greece. Tutors operated on an ad-hoc or impromptu basis in varied and unfixed settings wherein the main goal of the tutor was to impart knowledge to the learner in order to help the latter gain proficiency in the subject area. Methods of tutoring only began to become more structured after the 20th century through focus and specialization in the training of tutors, application of tutoring, and evaluation of tutors.From the 20th century onwards, with the rapid spread of mainstream education, the demand for tutoring has also increased as a way to supplement formal education.
+            <p class="sectiontag bigtext">Your search ends here</p>
+            <p class="sectionsubtag smallText">Tutoring began as an informal and unstructured method of educational
+                assistance, dating back to periods in Ancient Greece. Tutors operated on an ad-hoc or impromptu basis in
+                varied and unfixed settings wherein the main goal of the tutor was to impart knowledge to the learner in
+                order to help the latter gain proficiency in the subject area. Methods of tutoring only began to become
+                more structured after the 20th century through focus and specialization in the training of tutors,
+                application of tutoring, and evaluation of tutors.From the 20th century onwards, with the rapid spread
+                of mainstream education, the demand for tutoring has also increased as a way to supplement formal
+                education.
 
-        In Ancient Rome, ludi primary schools were attended by students from the democratic strata of the population, while affluent citizens preferred home-tutoring their children, including an in-depth course</p>
-    </div>
-    <div class="thumbnail">
-        <img src="https://source.unsplash.com/900x900/?coding , javascript" alt="logo">
-    </div>
+                In Ancient Rome, ludi primary schools were attended by students from the democratic strata of the
+                population, while affluent citizens preferred home-tutoring their children, including an in-depth course
+            </p>
+        </div>
+        <div class="thumbnail">
+            <img src="https://source.unsplash.com/900x900/?coding , javascript" alt="logo">
+        </div>
     </section>
     <hr>
 
-    <section class="section left">
+    <section class="section left" id="services">
         <div class="paras">
-        <p class="sectiontag bigtext">Future of Education</p>
-        <p class="sectionsubtag smallText">Education is a purposeful activity directed at achieving certain aims, such as transmitting knowledge or fostering skills and character traits. These aims may include the development of understanding, rationality, kindness, and honesty. Various researchers emphasize the role of critical thinking in order to distinguish education from indoctrination. Some theorists require that education results in an improvement of the student while others prefer a value-neutral definition of the term. In a slightly different sense, education may also refer, not to the process, but to the product of this process: the mental states and dispositions possessed by educated people. Education originated as the transmission of cultural heritage from one generation to the next. Today, educational goals increasingly encompass new ideas such as the liberation of learners, skills needed for modern society, empathy, and complex vocational skills.
+            <p class="sectiontag bigtext">Future of Education</p>
+            <p class="sectionsubtag smallText">Education is a purposeful activity directed at achieving certain aims,
+                such as transmitting knowledge or fostering skills and character traits. These aims may include the
+                development of understanding, rationality, kindness, and honesty. Various researchers emphasize the role
+                of critical thinking in order to distinguish education from indoctrination. Some theorists require that
+                education results in an improvement of the student while others prefer a value-neutral definition of the
+                term. In a slightly different sense, education may also refer, not to the process, but to the product of
+                this process: the mental states and dispositions possessed by educated people. Education originated as
+                the transmission of cultural heritage from one generation to the next. Today, educational goals
+                increasingly encompass new ideas such as the liberation of learners, skills needed for modern society,
+                empathy, and complex vocational skills.
 
-        Types of education are commonly divided into formal, non-formal, and informal education. Formal education takes place in education and training institutions, is usually structured by curricular aims and objectives, and learning is typically guided by a teacher. In most regions, formal education is compulsory up to a certain age and commonly divided into educational stages such as kindergarten, primary school and secondary school. Nonformal education occurs as addition or alternative to formal education.</p>
-    </div>
+                Types of education are commonly divided into formal, non-formal, and informal education. Formal
+                education takes place in education and training institutions, is usually structured by curricular aims
+                and objectives, and learning is typically guided by a teacher. In most regions, formal education is
+                compulsory up to a certain age and commonly divided into educational stages such as kindergarten,
+                primary school and secondary school. Nonformal education occurs as addition or alternative to formal
+                education.</p>
+        </div>
         <div class="thumbnail">
             <img src="https://source.unsplash.com/900x900/?coding , apple" alt="logo">
         </div>
@@ -70,30 +99,45 @@
 
     <section class="section">
         <div class="paras">
-        <p class="sectiontag bigtext">Lets Grow Together </p>
-        <p class="sectionsubtag smallText">Numerous definitions of education have been suggested by theorists belonging to diverse fields.Many agree that education is a purposeful activity directed at achieving certain aims, especially the transmission of knowledge.[6] But they often include other aims as well, such as fostering skills and character traits.However, there are deep disagreements about the exact nature of education besides these general characteristics. According to some conceptions, it is primarily a process that occurs during events like schooling, teaching, and learning.Others understand it not as a process but as the achievement or product brought about by this process. On this view, education is what educated persons have, i.e. the mental states and dispositions that are characteristic of them.However, the term may also refer to the academic study of the methods and processes taking place during teaching and learning, as well as the social institutions involved in these processes.Etymologically, the word "education" is derived from the Latin word ēducātiō ("A breeding, a bringing up, a rearing") from ēducō ("I educate, I train") which is related to the homonym ēdūcō ("I lead forth, I take out; I raise up, I erect") from ē- ("from, out of") and dūcō ("I lead, I conduct").</p>
-    </div>
-    <div class="thumbnail">
-        <img src="https://source.unsplash.com/900x900/?coding , python" alt="logo">
-    </div>
+            <p class="sectiontag bigtext">Lets Grow Together </p>
+            <p class="sectionsubtag smallText">Numerous definitions of education have been suggested by theorists
+                belonging to diverse fields.Many agree that education is a purposeful activity directed at achieving
+                certain aims, especially the transmission of knowledge.[6] But they often include other aims as well,
+                such as fostering skills and character traits.However, there are deep disagreements about the exact
+                nature of education besides these general characteristics. According to some conceptions, it is
+                primarily a process that occurs during events like schooling, teaching, and learning.Others understand
+                it not as a process but as the achievement or product brought about by this process. On this view,
+                education is what educated persons have, i.e. the mental states and dispositions that are characteristic
+                of them.However, the term may also refer to the academic study of the methods and processes taking place
+                during teaching and learning, as well as the social institutions involved in these
+                processes.Etymologically, the word "education" is derived from the Latin word ēducātiō ("A breeding, a
+                bringing up, a rearing") from ēducō ("I educate, I train") which is related to the homonym ēdūcō ("I
+                lead forth, I take out; I raise up, I erect") from ē- ("from, out of") and dūcō ("I lead, I conduct").
+            </p>
+        </div>
+        <div class="thumbnail">
+            <img src="https://source.unsplash.com/900x900/?coding , python" alt="logo">
+        </div>
     </section>
-    <section class="contactUs">
+    <section class="contactUs" id="contact">
         <p class="textContact">Contact Us</p>
         <div class="form">
             <input type="text" class="namebox" placeholder="Your Name">
             <input type="text" class="numberbox" placeholder="Contact Number">
             <input type="email" class="emailbox" placeholder="Email">
-            <textarea class="problembox" name="problembox" cols="38" rows="8" placeholder="Explain your problem"></textarea>
+            <textarea class="problembox" name="problembox" cols="38" rows="8"
+                placeholder="Explain your problem"></textarea>
             <button class="submitForm">Submit</button>
         </div>
     </section>
 
     <footer>
-        Made with ❤ by Abhishek 
+        Made with ❤ by Abhishek
         <br>
         <hr>
         Copyright &copy; 2023
     </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>

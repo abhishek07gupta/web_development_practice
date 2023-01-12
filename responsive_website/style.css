@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 .logo{
     width: 20%;
     display: flex;
@@ -11,7 +15,7 @@
 }
 
 .logo img{
-    width: 27%;
+    width: 21%;
     border: 2px solid grey;
     border-radius: 100%;
     display: block;
@@ -44,7 +48,7 @@
 }
 
 .navList li a:hover{
-    color: grey;
+    color: rgb(174, 172, 172);
     font-weight: bolder;
 }
 
@@ -67,11 +71,28 @@
 }
 
 #search{
-    font-size: 20px;
+    font-size: 14px;
+    padding: 6px;
     border: 3px solid grey;
     border-radius: 8px;   
     margin: 5px;
     width: 50%;
+}
+
+.burger{
+    display: none;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+}
+
+.line{
+    width: 30px;
+    background-color: white;
+    height: 4px;
+    margin: 3px 5px;
+
 }
 
 .firstSection{
@@ -111,11 +132,7 @@
 }
 
 .bigtext{
-font-size: 40px;
-}
-
-.smalltext{
-font-size: 20px;
+font-size: 200%;
 }
 
 .btn{
@@ -133,6 +150,7 @@ font-size: 20px;
     background-color: #f1e9e9;
     border: 2px solid grey;
     border-radius: 6px;
+    cursor: pointer;
 }
 
 .section{
@@ -195,6 +213,8 @@ hr{
     padding: 5px;
     border: 2px solid grey;
     border-radius: 5px;
+    max-width:90%;
+
 }
 .numberbox{
     width: 300px;
@@ -203,6 +223,7 @@ hr{
     padding: 5px;
     border: 2px solid grey;
     border-radius: 5px;
+    max-width:90%;
 }
 .emailbox{
     width: 300px;
@@ -211,6 +232,7 @@ hr{
     padding: 5px;
     border: 2px solid grey;
     border-radius: 5px;
+    max-width:90%;
 }
 
 .submitForm{
@@ -227,13 +249,14 @@ hr{
     padding: 8px;
     border: 2px solid grey;
     border-radius: 5px;
+    max-width:90%;
     /* text-align: center; */
 }
 ::-webkit-input-placeholder {
     text-align: center;
   }
 
-  footer{
+footer{
     background-color: rgb(43, 40, 40) ;
     color: white;
     text-align: center;
