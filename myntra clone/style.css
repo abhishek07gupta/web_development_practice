@@ -1,0 +1,39 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    position: sticky;
+    background-color: white;
+    top: 0;
+    height: 9vh;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 0px 20px 0px;
+}
+
+nav{
+    font-size: 15px;
+    padding-top: 1vh;
+}
+
+.left img{
+    width: 7%;
+}
+
+nav ul li{
+    list-style: none;
+    padding: 20px;
+}
+
+.section1{
+    background-color: aliceblue;
+    height: 122vh;
+}
+
+.search{
+    width: 30vw;
+    padding: 1vh;
+    border: 1px solid white;
+    border-radius: 6px;
+    background-color: #f7f2f2;
+}
