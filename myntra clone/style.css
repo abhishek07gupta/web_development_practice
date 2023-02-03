@@ -3,11 +3,15 @@
     margin: 0;
 }
 
+.container{
+    padding: 0 3vw;
+}
+
 header{
     position: sticky;
     background-color: white;
     top: 0;
-    height: 9vh;
+    height: 80px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 0px 20px 0px;
 }
 
@@ -17,7 +21,7 @@ nav{
 }
 
 .left img{
-    width: 7%;
+    width: 60px;
 }
 
 nav ul li{
@@ -27,7 +31,6 @@ nav ul li{
 
 .section1{
     background-color: aliceblue;
-    height: 122vh;
 }
 
 .search{
@@ -36,4 +39,53 @@ nav ul li{
     border: 1px solid white;
     border-radius: 6px;
     background-color: #f7f2f2;
+}
+
+.homeImg{
+    width: 100%;
+    padding: 2vh 0;
+}
+
+.itemImg{
+    width: 10vw;
+    margin: 1vh  0.5vw;
+    border-radius: 5px;
+}
+
+footer{
+    padding: 4vh;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    text-align: center;
+}
+
+@media only screen and (max-width:1170px) {
+    header{
+        height: 140px;
+    }
+
+    nav{
+        flex-direction: column;
+        align-items: center;
+        font-size: 13px;
+    }
+    
+    .right{
+        flex-direction: column;
+    }
+
+    .left img {
+        width: 30px;
+    }
+
+    nav ul li {
+        padding:12px 7px;
+    }
+
+    .container{
+        padding: 0 1vh;
+    }
+
+    .itemImg{
+        width: 18vw;
+    }
 }
